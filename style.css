@@ -1,14 +1,14 @@
 ﻿.my-dark-blue-text {
-    color: #13B1B4;
+    color: #13B1B4 !important;
 }
 .my-dark-blue-bg {
-    background-color: #13B1B4;
+    background-color: #13B1B4 !important;
 }
 .my-light-blue-text {
-    color: #BDEDF1;
+    color: #BDEDF1 !important;
 }
 .my-light-blue-bg {
-    background-color: #BDEDF1;
+    background-color: #BDEDF1 !important;
 }
 
 body {
@@ -134,7 +134,7 @@ body {
 
 .item {
     width: auto;
-    height: 700px;
+    /*height: 700px;*/
     max-height: 700px;
 }
 
@@ -190,6 +190,12 @@ body {
 }
 .dark-blue-translucent-bg {
     background-color: rgba(189, 239, 241, 0.6) !important;
+}
+
+.translucent-black-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #BDEDF1;
 }
 
 .content-row {
@@ -317,6 +323,18 @@ body {
 
 flex-1 {
     flex: 1;
+}
+
+.video-title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.video-div {
+    background-color: black;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 /***************************************
