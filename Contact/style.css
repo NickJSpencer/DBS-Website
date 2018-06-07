@@ -1,0 +1,86 @@
+
+.bg {
+    background-image: url("background.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-form {
+    flex: 3;
+    padding: 10px;
+    border: solid;
+    border-color: lightblue;
+    border-width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content-row {
+    display: flex;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+}
+
+.content-row:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+.raised-card {
+    box-shadow: 8px 8px 20px darkgray;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+#contact-label {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#contact-head {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    font-size: 15px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #13B1B4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #119ea1;
+}
+
+/* Style container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}

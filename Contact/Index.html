@@ -2,39 +2,103 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DBS Website</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<style>
-    #nav-menu-div {
-        width: 100%;
-        text-align: center;
-    }
-
-    #nav-menu-ul {
-        display: inline-block;
-    }
-</style>
-
 <body>
-    <div class="container" id="header-div">
-        <div id="header-div">
 
+<!--navbar-->
+<div class="container" id="overall-container">
+    <div class="container" id="header-div">
+        <div class="logo">
+            <span><img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo"></span>
+            <span class="title">Dive Beneath the Surface</span>
         </div>
         <div id="nav-menu-div">
-            <ul class="nav nav-pills" id="nav-menu-ul">
-                <li><a href="../Index.html">Home</a></li>
-                <li><a href="../Background/Index.html">Background</a></li>
-                <li><a href="../LessonPlans/Index.html">Lesson Plans</a></li>
-                <li><a href="../Events/Index.html">Events</a></li>
-                <li><a href="../Videos/Index.html">Videos</a></li>
-                <li class="active"><a href="#">Contact</a></li>
-            </ul>
+            <div class="my-nav my-nav-pills" id="nav-menu-ul">
+                <div class="border"></div>
+                <div class="li"><a href="../Index.html">Home</a></div>
+                <div class="border"></div>
+                <div class="li"><a href="../LessonPlans/Index.html"><span class="pill-label">Lessons</span></a></div>
+                <div class="border"></div>
+                <div class="li"><a href="../Events/Index.html"><span class="pill-label">Events</span></a></div>
+                <div class="border"></div>
+                <div class="li"><a href="../Videos/Index.html"><span class="pill-label">Videos</span></a></div>
+                <div class="border"></div>
+                <div class="li"><a href="../Background/Index.html"><span class="pill-label">About</span></a></div>
+                <div class="border"></div>
+                <div class="li active"><a href="#"><span class="pill-label">Contact</span></a></div>
+            </div>
         </div>
     </div>
-    <div>Contact</div>
+</div>
+
+
+<div class="container">
+
+    <div class="bg">
+        <h1 style="color:#fff;font-family:sans-serif;text-align:center;">B A C K G R O U N D</h1>
+    </div>
+
+
+    <div class="content-row">
+        <div class="raised-card flex">
+            <div id="contact-label">
+                <div id="contact-head">
+                    <p>
+                        CONTACT US
+                    </p>
+                </div>
+                <p>
+                    <br>
+                    <b>Email</b> <br> <small>
+                    <a href="mailto:divebeneaththesurface@gmail.com?subject=DBS Website Form">
+                        divebeneaththesurface@gmail.com
+                    </a>
+                    <br></small>
+                </p>
+                <p>
+                    <br>
+                    <b>Phone</b> <br> <small>xxx xxx xxxx</small>
+                </p>
+                <p>
+                    <br>
+                    <b>Address</b> <br> <small>P Sherman, 42, Wallaby Way, Sydney</small>
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formspree.io/alexvetushko@icloud.com" method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea id="message" name="message" placeholder="Write something" style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 </body>
