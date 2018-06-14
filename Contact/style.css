@@ -8,7 +8,8 @@
 }
 
 .contact-form {
-    flex: 3;
+    margin: auto;
+    flex: 2;
     padding: 10px;
     border: solid;
     border-color: lightblue;
@@ -18,7 +19,7 @@
 }
 
 .content-row {
-    display: flex;
+    /*display: flex;*/
     padding: 50px;
     padding-left: 10%;
     padding-right: 10%;
