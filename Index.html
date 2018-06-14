@@ -1,30 +1,46 @@
 ﻿<!DOCTYPE html>
-
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>DBS Website</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <script>
     $(function () {
         $('#carouselExampleIndicators').carousel();
     });
+
+
 </script>
 
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="Index.html">Home</a>
+        <a href="LessonPlans/Index.html">Lessons</a>
+        <a href="Events/Index.html">Events</a>
+        <a href="Videos/Index.html">Videos</a>
+        <a href="Background/Index.html">About</a>
+        <a href="Contact/Index.html">Contact</a>
+    </div>
+
     <div class="container" id="overall-container">
         <div class="container" id="header-div">
-            <div class="logo">
-                <span><img width="80" height="80" src="Images/logo.jpg" alt="DBS Logo"></span>
-                <span class="title">Dive Beneath the Surface</span>
-            </div>
+            <a href="Index.html">
+                <div class="logo">
+                    <span><img width="80" height="80" src="Images/logo.jpg" alt="DBS Logo"></span>
+                    <span class="title">Dive Beneath the Surface</span>
+                </div>
+            </a>
+
             <div id="nav-menu-div">
                 <div class="my-nav my-nav-pills" id="nav-menu-ul">
                     <div class="border"></div>
@@ -40,6 +56,9 @@
                     <div class="border"></div>
                     <div class="li"><a href="Contact/Index.html"><span class="pill-label">Contact</span></a></div>
                 </div>
+                <div id="nav-collapsed" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </div>
 
@@ -54,15 +73,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item item active">
-                            <img class="d-block w-100 carousel-image" width="10000" height="10000" src="Images/lots_of_fish.jpg" alt="First slide">
-                            <div class="leftish">Welcome to Cal Poly's <br />Dive Beneath the Surface!</div>
+                            <img class="d-block w-100 carousel-image" src="Images/lots_of_fish.jpg" alt="First slide">
+                            <!--<div class="center translucent-bg my-dark-blue-text dark-blue-translucent-bg">
+                                <div class="large-font">Lesson Plans</div>
+                                <button class="btn btn-DBS shadow" style="margin-bottom: 30px; font-size: 28px;" onclick="lessonPlans()">Download All Lesson Plans</button>
+                            </div>-->
+                            <div class="leftish">
+                                <div class="pic-1-text">Welcome to Cal Poly's <br />Dive Beneath the Surface!</div>
+                            </div>
                         </div>
-                        <div class="carousel-item item">
+                        <!--<div class="carousel-item item">
                             <img class="d-block w-100 carousel-image" src="Images/sea_urchin.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item item">
                             <img class="d-block w-100 carousel-image" src="Images/above_water.jpg" alt="Third slide">
-                        </div>
+                        </div>-->
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -94,7 +119,7 @@
 
             <div class="content-row">
                 <div class="card-container">
-                    <div class="clickable-card">
+                    <div class="clickable-card side-stack-3">
                         <div class="image-div">
                             <img class="image" src="Images/children_in_scuba.jpg" alt="Horned Shark">
                         </div>
@@ -111,7 +136,7 @@
                             behaviour, and reproduction (NGSS Performance Expectation 4-LS1- 1).”
                         </div>
                     </div>
-                    <div class="clickable-card">
+                    <div class="clickable-card side-stack-3">
                         <div class="image-div">
                             <img class="image" src="Images/scuba_in_kelp.jpg" alt="Horned Shark">
                         </div>
@@ -127,7 +152,7 @@
                             organisms featured in lesson plans 1 and 2.
                         </div>
                     </div>
-                    <div class="clickable-card">
+                    <div class="clickable-card side-stack-3">
                         <div class="image-div">
                             <img class="image" src="Images/3_divers.jpg" alt="Horned Shark">
                         </div>
