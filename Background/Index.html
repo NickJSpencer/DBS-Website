@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -134,115 +134,112 @@
     <p>
 
     </p>
+    <div class="container" id="content-div">
 
-    <div class="header-image-div">
-        <img class="header-image" src="../Images/learning3.JPG" alt="First slide">
-        <div class="center translucent-bg my-light-black-text dark-blue-translucent-bg">
-            <!-- <div class="small-font">Together a team comprised of Cal Poly professors and students created an
-                educational experience that combined both their loves of marine biology and
-                their knowledge of the Next Generation Science Standards. Meet the team of dedicated
-                individuals who made Dive Beneath the Surface the great program it is today.</div> -->
-            <div class="content-row-transparent">
-            <div class="raised-card flex">
-                <div id="mission-content">
-                    Together a team comprised of Cal Poly professors and students created an
-                    educational experience that combined both their loves of marine biology and
-                    their knowledge of the Next Generation Science Standards. Meet the team of dedicated
-                    individuals who made Dive Beneath the Surface the great program it is today.
+        <div class="header-image-div">
+            <img class="header-image" src="../Images/learning3.JPG" alt="First slide">
+            <!--<div class="center translucent-bg my-light-black-text dark-blue-translucent-bg">
+                <div class="content-row-transparent">
+                    <div class="raised-card flex">
+                        <div id="mission-content">
+                            Together a team comprised of Cal Poly professors and students created an
+                            educational experience that combined both their loves of marine biology and
+                            their knowledge of the Next Generation Science Standards. Meet the team of dedicated
+                            individuals who made Dive Beneath the Surface the great program it is today.
+                        </div>
+                    </div>
                 </div>
-
-
-            </div>
-
+            </div>-->
+            <div class="center translucent-bg my-dark-blue-text dark-blue-translucent-bg">
+                <div class="large-font">Lesson Plans</div>
+                <button class="btn btn-DBS shadow" style="margin-bottom: 30px; font-size: 28px;" onclick="lessonPlans()">Download All Lesson Plans</button>
             </div>
         </div>
 
-    </div>
+        <!-- <div class="header-image-div">
+               <div class="content-rows">
+               <div class="raised-card flex">
+                   <div id="mission-label">
+                       ABOUT
+                   </div>
+                   <div id="mission-content">
+                       Together a team comprised of Cal Poly professors and students created an
+                       educational experience that combined both their loves of marine biology and
+                       their knowledge of the Next Generation Science Standards. Meet the team of dedicated
+                       individuals who made Dive Beneath the Surface the great program it is today.
+                   </div>
 
-    <!-- <div class="header-image-div">
-        <div class="content-rows">
-        <div class="raised-card flex">
-            <div id="mission-label">
-                ABOUT
+
+               </div>
+
+               </div>
+               <img class="header-image" src="../Images/learning3.JPG" alt="First slide">
+
+           </div>
+        -->
+
+
+
+
+
+        <div class="w3-row-padding" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
             </div>
-            <div id="mission-content">
-                Together a team comprised of Cal Poly professors and students created an
-                educational experience that combined both their loves of marine biology and
-                their knowledge of the Next Generation Science Standards. Meet the team of dedicated
-                individuals who made Dive Beneath the Surface the great program it is today.
-            </div>
 
 
-        </div>
-
-        </div>
-        <img class="header-image" src="../Images/learning3.JPG" alt="First slide">
-
-    </div>
- -->
-
-    
-
-
-
-    <div class="w3-row-padding" id="about">
-        <div class="w3-center w3-padding-64">
-            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-        </div>
-
-
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
-                Crow White
-                <div class="w3-container">
-                    <p>
-                        The visionary behind Dive Beneath the Surface, Crow White a professor at Cal Poly, was inspired
-                        by his love of marine biology to create an interactive experience for elementary school
-                        students. His hope is that students would be given the opportunity to develop a greater
-                        understanding of the ocean which is such a vast ecosystem that provides the foundation for an
-                        abundance of learning.
-                    </p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
+                    Crow White
+                    <div class="w3-container">
+                        <p>
+                            The visionary behind Dive Beneath the Surface, Crow White a professor at Cal Poly, was inspired
+                            by his love of marine biology to create an interactive experience for elementary school
+                            students. His hope is that students would be given the opportunity to develop a greater
+                            understanding of the ocean which is such a vast ecosystem that provides the foundation for an
+                            abundance of learning.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
-                Crow White
-                <div class="w3-container">
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
+                    Crow White
+                    <div class="w3-container">
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
-                Crow White
-                <div class="w3-container">
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
+                    Crow White
+                    <div class="w3-container">
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
-                Crow White
-                <div class="w3-container">
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
+                    Crow White
+                    <div class="w3-container">
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
-                Crow White
-                <div class="w3-container">
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="../Images/crow.PNG" alt="Crow" style="width:30%">
+                    Crow White
+                    <div class="w3-container">
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 </body>

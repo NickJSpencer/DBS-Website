@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Images"
+    "\\Background",
+    "\\Contact",
+    "\\Videos",
+    "\\Videos\\Videos"
   ],
-  "SelectedNode": "\\Images\\lots_of_fish.jpg",
+  "SelectedNode": "\\Index.html",
   "PreviewInSolutionExplorer": false
 }
