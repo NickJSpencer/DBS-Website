@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -23,157 +23,155 @@
 
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="Index.html">Home</a>
-    <a href="LessonPlans/Index.html">Lessons</a>
-    <a href="Events/Index.html">Events</a>
-    <a href="Videos/Index.html">Videos</a>
-    <a href="Background/Index.html">About</a>
-    <a href="Contact/Index.html">Contact</a>
-</div>
-
-<div class="container" id="overall-container">
-    <div class="container" id="header-div">
-        <a href="Index.html">
-            <div class="logo">
-                <span><img width="80" height="80" src="Images/logo.JPG" alt="DBS Logo"></span>
-                <span class="title">Dive Beneath the Surface</span>
-            </div>
-        </a>
-
-        <div id="nav-menu-div">
-            <div class="my-nav my-nav-pills" id="nav-menu-ul">
-                <div class="border"></div>
-                <div class="li active"><a href="#">Home</a></div>
-                <div class="border"></div>
-                <div class="li"><a href="LessonPlans/Index.html"><span class="pill-label">Lessons</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="Events/Index.html"><span class="pill-label">Events</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="Videos/Index.html"><span class="pill-label">Videos</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="Background/Index.html"><span class="pill-label">About</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="Contact/Index.html"><span class="pill-label">Contact</span></a></div>
-            </div>
-            <div id="nav-collapsed" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a class="active" href="Index.html">Home</a>
+        <a href="LessonPlans/Index.html">Lessons</a>
+        <a href="Events/Index.html">Events</a>
+        <a href="Videos/Index.html">Videos</a>
+        <a href="Background/Index.html">About</a>
+        <a href="Contact/Index.html">Contact</a>
     </div>
 
-    <div class="container" id="content-div">
+    <div class="container" id="overall-container">
+        <div class="container" id="header-div">
+            <a href="Index.html">
+                <div class="logo">
+                    <span><img width="80" height="80" src="Images/logo.jpg" alt="DBS Logo"></span>
+                    <span class="title">Dive Beneath the Surface</span>
+                </div>
+            </a>
 
-        <div id="carousel-div">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item item active">
-                        <img class="d-block w-100 carousel-image" src="Images/lots_of_fish.JPG" alt="First slide">
-                        <!--<div class="center translucent-bg my-dark-blue-text dark-blue-translucent-bg">
-                            <div class="large-font">Lesson Plans</div>
-                            <button class="btn btn-DBS shadow" style="margin-bottom: 30px; font-size: 28px;" onclick="lessonPlans()">Download All Lesson Plans</button>
+            <div id="nav-menu-div">
+                <div class="my-nav my-nav-pills" id="nav-menu-ul">
+                    <div class="border"></div>
+                    <div class="li active"><a href="#">Home</a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="LessonPlans/Index.html"><span class="pill-label">Lessons</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="Events/Index.html"><span class="pill-label">Events</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="Videos/Index.html"><span class="pill-label">Videos</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="Background/Index.html"><span class="pill-label">About</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="Contact/Index.html"><span class="pill-label">Contact</span></a></div>
+                </div>
+                <div id="nav-collapsed" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="content-div">
+
+            <div id="carousel-div">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item item active">
+                            <img class="d-block w-100 carousel-image" src="Images/lots_of_fish.jpg" alt="First slide">
+                            <!--<div class="center translucent-bg my-dark-blue-text dark-blue-translucent-bg">
+                                <div class="large-font">Lesson Plans</div>
+                                <button class="btn btn-DBS shadow" style="margin-bottom: 30px; font-size: 28px;" onclick="lessonPlans()">Download All Lesson Plans</button>
+                            </div>-->
+                            <div class="leftish">
+                                <div class="pic-1-text">Welcome to Cal Poly's <br />Dive Beneath the Surface!</div>
+                            </div>
+                        </div>
+                        <!--<div class="carousel-item item">
+                            <img class="d-block w-100 carousel-image" src="Images/sea_urchin.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item item">
+                            <img class="d-block w-100 carousel-image" src="Images/above_water.jpg" alt="Third slide">
                         </div>-->
-                        <div class="leftish">
-                            <div class="pic-1-text">Welcome to Cal Poly's <br />Dive Beneath the Surface!</div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="raised-card flex">
+                    <div id="mission-label" style="display: table-cell">
+                        <div style="display: inline-block">MISSION</div>
+                    </div>
+                    <div id="mission-content">
+                        Our Mission is to combine marine science, education and technology to create a
+                        multi-sensory and interactive educational experience of the ocean for elementary
+                        school students learning science and engineering.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-row">
+                <div class="card-container">
+                    <div class="clickable-card side-stack-3">
+                        <div class="image-div">
+                            <img class="image" src="Images/children_in_scuba.jpg" alt="Horned Shark">
+                        </div>
+                        <div class="card-header">
+                            NGSS Lesson Plans
+                        </div>
+                        <div class="card-body">
+                            Building on the Next Generation Science Standards
+                            Disciplinary Core Idea “Structure, Function, and Information Processing”,
+                            the Dive Beneath the Surface program uses the marine environment and
+                            organisms -- and live interactive SCUBA diving with your classroom -- to
+                            teach 4th graders to “construct an argument that plants and animals have
+                            internal and external structures that function to support survival, growth,
+                            behaviour, and reproduction (NGSS Performance Expectation 4-LS1- 1).”
                         </div>
                     </div>
-                    <!--<div class="carousel-item item">
-                        <img class="d-block w-100 carousel-image" src="Images/sea_urchin.JPG" alt="Second slide">
+                    <div class="clickable-card side-stack-3">
+                        <div class="image-div">
+                            <img class="image" src="Images/scuba_in_kelp.jpg" alt="Horned Shark">
+                        </div>
+                        <div class="card-header">
+                            SCUBA Experience
+                        </div>
+                        <div class="card-body">
+                            Led by a team of Cal Poly students and faculty, this underwater experience
+                            will allow elementary school students to "dive beneath the surface." In our
+                            3-lesson series, Lesson 2 is an interactive, 30 minute SCUBA dive in the
+                            ocean along the California central coast observing and discussing the structures
+                            and functions of the marine organisms featured in lesson plan 1.
+                        </div>
                     </div>
-                    <div class="carousel-item item">
-                        <img class="d-block w-100 carousel-image" src="Images/above_water.JPG" alt="Third slide">
-                    </div>-->
+                    <div class="clickable-card side-stack-3">
+                        <div class="image-div">
+                            <img class="image" src="Images/3_divers.jpg" alt="Horned Shark">
+                        </div>
+                        <div class="card-header">
+                            Engineering
+                        </div>
+                        <div class="card-body">
+                            Students apply their knowledge of structure and function to engineering by
+                            designing, drawing and then comparing marine organisms with specific
+                            anatomical structures to support their survival, growth, behavior and reproduction.
+                        </div>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
 
-        <div class="content-row">
-            <div class="raised-card flex">
-                <div id="mission-label">
-                    MISSION
-                </div>
-                <div id="mission-content">
-                    Dive Beneath the Surface aims to provide elementary school students
-                    with an unforgettable live SCUBA diving experience in their very own classroom.
-                    Adhering to the Next Generation Science Standards, and inspired by the marine
-                    environment and its organisms, DBS provides a 4 lesson series that brings science
-                    and engineering to life in a fun and interactive way. Join the Cal Poly led team as
-                    they take your classroom on an ocean adventure.
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content-row">
-            <div class="card-container">
-                <div class="clickable-card side-stack-3">
-                    <div class="image-div">
-                        <img class="image" src="Images/children_in_scuba.JPG" alt="Horned Shark">
-                    </div>
-                    <div class="card-header">
-                        NGSS Lesson Plans
-                    </div>
-                    <div class="card-body">
-                        Building on the Next Generation Science Standards
-                        Disciplinary Core Idea “Structure, Function, and Information Processing”,
-                        the Dive Beneath the Surface program uses the marine environment and
-                        organisms -- and live interactive SCUBA diving with your classroom -- to
-                        teach 4th graders to “construct an argument that plants and animals have
-                        internal and external structures that function to support survival, growth,
-                        behaviour, and reproduction (NGSS Performance Expectation 4-LS1- 1).”
-                    </div>
-                </div>
-                <div class="clickable-card side-stack-3">
-                    <div class="image-div">
-                        <img class="image" src="Images/scuba_in_kelp.JPG" alt="Horned Shark">
-                    </div>
-                    <div class="card-header">
-                        SCUBA Experience
-                    </div>
-                    <div class="card-body">
-                        Led by a team of Cal Poly students and faculty, this
-                        underwater experience will allow elementary school students to "dive
-                        beneath the surface." In our 4 lesson series, lesson 3 is an interactive, 30
-                        minute SCUBA dive in the ocean along the California central coast
-                        observing and discussing the structures and functions of the marine
-                        organisms featured in lesson plans 1 and 2.
-                    </div>
-                </div>
-                <div class="clickable-card side-stack-3">
-                    <div class="image-div">
-                        <img class="image" src="Images/3_divers.JPG" alt="Horned Shark">
-                    </div>
-                    <div class="card-header">
-                        Engineering
-                    </div>
-                    <div class="card-body">
-                        Engineering Summary
-                    </div>
-                </div>
             </div>
 
         </div>
 
+        <div id="footer">
+            <hr />
+            Copyright - DBS 2018
+        </div>
     </div>
-
-    <div id="footer">
-        <hr />
-        Copyright - DBS 2018
-    </div>
-</div>
 
 
 </body>

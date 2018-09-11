@@ -1,15 +1,19 @@
 .my-dark-blue-text {
     color: #13B1B4 !important;
 }
+
 .my-dark-blue-bg {
     background-color: #13B1B4 !important;
 }
+
 .my-light-blue-text {
     color: #BDEDF1 !important;
 }
+
 .my-light-black-text {
     color: #000000;
 }
+
 .my-light-blue-bg {
     background-color: #BDEDF1 !important;
 }
@@ -48,12 +52,12 @@ body {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 580px)
-{
+@media screen and (max-width: 580px) {
     .title {
         font-size: 26px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .title {
         font-size: 20px;
@@ -83,7 +87,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0px 1px 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 #nav-menu-div {
@@ -107,12 +111,14 @@ body {
     font-size: 56px;
     margin-right: 10px;
     color: #13B1B4;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1040px) {
     #nav-menu-ul {
         display: none;
     }
+
     #nav-collapsed {
         display: block;
     }
@@ -192,7 +198,7 @@ body {
 }
 
 #carousel-div {
-    border: solid;
+    /*border: solid;*/
     border-color: gray;
     border-bottom-width: 2px;
     /*border-radius: 10px;*/
@@ -219,36 +225,43 @@ body {
 .pic-1-text {
     font-size: 70px;
 }
+
 @media screen and (max-width: 1400px) {
     .pic-1-text {
         font-size: 54px;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .pic-1-text {
         font-size: 40px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .pic-1-text {
         font-size: 30px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .pic-1-text {
         font-size: 24px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .pic-1-text {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 400px) {
     .pic-1-text {
         font-size: 16px;
     }
 }
+
 .top-center {
     position: absolute;
     top: 0px;
@@ -267,14 +280,17 @@ body {
 .large-font {
     font-size: 100px;
 }
+
 .small-font {
     font-size: 50px;
 }
+
 .translucent-bg {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     text-align: center;
 }
+
 .dark-blue-translucent-bg {
     background-color: rgba(189, 239, 241, 0.6) !important;
 }
@@ -291,6 +307,7 @@ body {
     padding-right: 10%;
     font-size: 20px;
 }
+
 .content-row-transparent {
     padding: 50px;
     padding-left: 10%;
@@ -299,14 +316,15 @@ body {
     opacity: 1
 }
 
-    .content-row:nth-child(odd) {
-        background-color: #f5fcfd;
-    }
+.content-row:nth-child(odd) {
+    background-color: #f5fcfd;
+}
 
 .card-container {
     margin: -15px;
     display: flex;
 }
+
 .raised-card {
     box-shadow: 4px 4px 20px 1px darkgray;
     border-radius: 5px;
@@ -357,14 +375,15 @@ body {
     width: 33.33333%;
 }
 
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
     .side-stack-3 {
         width: 100%;
     }
+
     .card-container {
         display: block;
     }
+
     .clickable-card {
         margin: 0px;
         margin-bottom: 15px;
@@ -508,13 +527,15 @@ flex-1 {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     top: 0;
     right: 0;
     overflow-x: hidden;
     background-color: white;
     transition: 0.5s;
-    padding-top: 100px;
+    padding-top: 20px;
+    margin-top: 80px;
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, .5);
 }
 
     .sidenav a {
@@ -527,7 +548,15 @@ flex-1 {
     }
 
         .sidenav a:hover {
-            color: #BDEDF1;
+            //color: #BDEDF1;
+            color: white;
+            background-color: #13B1B4;
+        }
+
+        .sidenav a.active {
+            //color: #BDEDF1;
+            color: white;
+            background-color: #13B1B4;
         }
 
     .sidenav .closebtn {
@@ -541,7 +570,7 @@ flex-1 {
 
 @media screen and (max-height: 450px) {
     .sidenav {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
         .sidenav a {
