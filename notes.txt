@@ -1,0 +1,3 @@
+DBS Notes
+
+1. Make the header of About say "Who we are" and then the other text will be below it.

@@ -32,17 +32,32 @@ body {
     width: 100% !important;
 }
 
+.nav-menu-left {
+    width: 50%;
+}
+    .nav-menu-left:hover {
+        text-decoration: none !important;
+        cursor: pointer;
+        opacity: .6;
+    }
+
 .logo {
     /*flex: 3;*/
     width: 50%;
     display: table-cell;
-    white-space: nowrap;
+    //white-space: nowrap;
     overflow: visible;
 }
 
-    .logo > span:hover {
-        cursor: pointer;
+@media screen and (max-width: 1040px) {
+    .logo {
+        width: 100%;
     }
+
+    .nav-menu-left {
+        width: 100%;
+    }
+}
 
 .title {
     font-size: 34px;
@@ -50,6 +65,8 @@ body {
     padding-left: 10px;
     font-weight: bold;
     vertical-align: middle;
+    height: 100%;
+    display: inline-block;
 }
 
 @media screen and (max-width: 580px) {
@@ -96,8 +113,6 @@ body {
     /*flex: 3;*/
 }
 
-
-
 #nav-menu-ul {
     display: flex;
     height: 100%;
@@ -121,6 +136,10 @@ body {
 
     #nav-collapsed {
         display: block;
+    }
+
+    #nav-menu-div {
+        width: 0%;
     }
 }
 
@@ -303,9 +322,20 @@ body {
 
 .content-row {
     padding: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    //padding-left: 10%;
+    //padding-right: 10%;
     font-size: 20px;
+}
+    .content-row > div {
+        max-width: 1200px;
+        margin: auto;
+    }
+@media (max-width: 600px) {
+    .content-row {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 0px;
+    }
 }
 
 .content-row-transparent {
@@ -326,13 +356,20 @@ body {
 }
 
 .raised-card {
-    box-shadow: 4px 4px 20px 1px darkgray;
+    box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, .5);
     border-radius: 5px;
     display: table-cell;
 }
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .flex {
+        display: block;
+    }
 }
 
 #mission-label {
@@ -341,20 +378,43 @@ body {
     font-weight: bold;
     background-color: #BDEDF1;
     padding: 10px;
-    border-top-left-radius: 5px;
+    //border-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     vertical-align: middle;
-    width: 25%;
+    flex: 1;
+}
+
+    #mission-label > div {
+        width: 100%;
+    }
+@media (max-width: 600px) {
+    #mission-label {
+        width: 100%;
+    }
+
+}
+#mission-label>div {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.mission-text {
+    margin: auto;
+    display: inline-block;
 }
 
 #mission-content {
-    padding: 10px;
-    border: solid;
+    padding: 20px;
+    //border: solid;
     border-color: #BDEDF1;
     border-width: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 75%;
+    font-size: 24px;
+    flex: 3;
+    //font-weight: bold;
 }
 
 .clickable-card {
@@ -363,29 +423,35 @@ body {
         border-width: 2px;
         border-color: transparent;*/
     box-shadow: 4px 4px 20px 1px darkgray;
+    height: 100%;
 }
 
     .clickable-card:hover {
         border-color: #BDEDF1;
         cursor: pointer;
         box-shadow: 4px 4px 20px 4px darkgray;
+        //opacity: .6;
     }
 
 .side-stack-3 {
     width: 33.33333%;
+    margin: 15px;
 }
 
 @media screen and (max-width: 1100px) {
     .side-stack-3 {
         width: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
     }
 
     .card-container {
         display: block;
+        margin: 0px;
     }
 
     .clickable-card {
-        margin-bottom: 15px;
+       // margin-bottom: 15px;
     }
 }
 
@@ -404,11 +470,52 @@ body {
     height: 100%
 }
 
+.clickable-card:hover .card-header {
+    opacity: .4;
+}
+
+.clickable-card:hover .card-body {
+    opacity: .4;
+}
+
 .image-div {
     position: relative;
     width: 100%;
     max-height: 500px;
     overflow: hidden;
+    //display: flex;
+}
+/*.image-div:hover::after {
+    //opacity: .6;
+    content: "hello";
+    position:absolute;
+    z-index: 500;
+    font-size: 100px;
+    bottom: 50px;
+    opacity: 1 !important;
+    margin: auto;
+    color: black;
+}*/
+.image-text {
+    visibility: hidden;
+    position: absolute;
+    opacity: 2 !important;
+    color: black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 50px;
+    background-color: rgba(189, 239, 241, 0.6);
+    text-align: center;
+    color: #13B1B4 !important;
+    text-shadow: 2px 2px 10px black;
+    display: flex;
+}
+.image-text>div {
+    margin: auto;
+}
+.clickable-card:hover>div .image-text {
+    visibility: visible;
 }
 
 .image {
@@ -468,6 +575,9 @@ flex-1 {
     width: 100%;
 }
 
+.about-content {
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 1);
+}
 /***************************************
     CUSTOM BUTTON 
 ****************************************/
