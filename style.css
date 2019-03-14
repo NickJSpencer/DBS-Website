@@ -467,7 +467,11 @@ body {
 
 .card-body {
     padding: 10px;
-    height: 100%
+    /*height: 100%*/
+}
+
+.clickable-card:hover .wide-card-right {
+    opacity: .4;
 }
 
 .clickable-card:hover .card-header {
@@ -526,7 +530,6 @@ body {
 .header-image-div {
     position: relative;
     width: auto;
-    height: 700px;
     max-height: 700px;
     overflow: hidden;
 }
@@ -577,6 +580,38 @@ flex-1 {
 
 .about-content {
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 1);
+}
+
+.wide-card {
+    width: 100%;
+    display: flex;
+    box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.wide-card-left {
+    flex: 1;
+}
+
+.wide-card-right {
+    flex: 3;
+    overflow: hidden;
+}
+
+.wide-card-title {
+    background-color: #BDEDF1;
+    text-align: left;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.wide-card-content {
+    padding: 10px;
+}
+
+.wide-card-image {
+    width: 100%;
 }
 /***************************************
     CUSTOM BUTTON 
@@ -687,3 +722,4 @@ flex-1 {
             font-size: 18px;
         }
 }
+
