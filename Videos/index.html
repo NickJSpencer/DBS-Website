@@ -7,6 +7,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="utf-8" />
     <title>DBS Website</title>
@@ -16,30 +17,50 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="vid.js"></script>
+    <script src="../script.js"></script>
+
 </head>
 
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html">Home</a>
+        <a href="../LessonPlans/index.html">Lessons</a>
+        <a href="../Events/index.html">Events</a>
+        <a class="active" href="../Videos/index.html">Videos</a>
+        <a href="../Background/index.html">About</a>
+        <a href="../Contact/index.html">Contact</a>
+    </div>
+
     <div class="container" id="overall-container">
         <div class="container" id="header-div">
-            <div class="logo">
-                <span><img width="80" height="80" src="../Images/logo.JPG" alt="DBS Logo"></span>
-                <span class="title">Dive Beneath the Surface</span>
-            </div>
+            <a href="../index.html" class="nav-menu-left">
+                <div class="logo">
+                    <img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo">
+                    <div class="title">
+                        <div>
+                            Dive Beneath the Surface
+                        </div>
+                    </div>
+                </div>
+            </a>
             <div id="nav-menu-div">
                 <div class="my-nav my-nav-pills" id="nav-menu-ul">
                     <div class="border"></div>
                     <div class="li"><a href="../index.html">Home</a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../LessonPlans/Index.html"><span class="pill-label">Lessons</span></a></div>
+                    <div class="li"><a href="../LessonPlans/index.html"><span class="pill-label">Lessons</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Events/Index.html"><span class="pill-label">Events</span></a></div>
+                    <div class="li"><a href="../Events/index.html"><span class="pill-label">Events</span></a></div>
                     <div class="border"></div>
-                    <div class="li active"><a href="../Videos/Index.html"><span class="pill-label">Videos</span></a></div>
+                    <div class="li active"><a href="../Videos/index.html"><span class="pill-label">Videos</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Background/Index.html"><span class="pill-label">About</span></a></div>
+                    <div class="li"><a href="../Background/index.html"><span class="pill-label">About</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Contact/Index.html"><span class="pill-label">Contact</span></a></div>
+                    <div class="li"><a href="../Contact/index.html"><span class="pill-label">Contact</span></a></div>
+                </div>
+                <div id="nav-collapsed" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
         </div>

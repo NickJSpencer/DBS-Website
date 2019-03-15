@@ -7,40 +7,60 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="utf-8" />
     <title>DBS Website</title>
 
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="../script.js"></script>
 
 </head>
 
 <body>
 
-<div class="container" id="overall-container">
-    <div class="container" id="header-div">
-        <div class="logo">
-            <span><img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo"></span>
-            <span class="title">Dive Beneath the Surface</span>
-        </div>
-        <div id="nav-menu-div">
-            <div class="my-nav my-nav-pills" id="nav-menu-ul">
-                <div class="border"></div>
-                <div class="li"><a href="../Index.html">Home</a></div>
-                <div class="border"></div>
-                <div class="li"><a href="../LessonPlans/Index.html"><span class="pill-label">Lessons</span></a></div>
-                <div class="border"></div>
-                <div class="li active"><a href="#"><span class="pill-label">Events</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="../Videos/Index.html"><span class="pill-label">Videos</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="../Background/Index.html"><span class="pill-label">About</span></a></div>
-                <div class="border"></div>
-                <div class="li"><a href="../Contact/Index.html"><span class="pill-label">Contact</span></a></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html">Home</a>
+        <a href="../LessonPlans/index.html">Lessons</a>
+        <a class="active" href="#">Events</a>
+        <a href="../Videos/index.html">Videos</a>
+        <a href="../Background/index.html">About</a>
+        <a href="../Contact/index.html">Contact</a>
+    </div>
+
+    <div class="container" id="overall-container">
+        <div class="container" id="header-div">
+            <a href="../index.html" class="nav-menu-left">
+                <div class="logo">
+                    <img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo">
+                    <div class="title">
+                        <div>
+                            Dive Beneath the Surface
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div id="nav-menu-div">
+                <div class="my-nav my-nav-pills" id="nav-menu-ul">
+                    <div class="border"></div>
+                    <div class="li"><a href="../index.html">Home</a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="../LessonPlans/index.html"><span class="pill-label">Lessons</span></a></div>
+                    <div class="border"></div>
+                    <div class="li active"><a href="#"><span class="pill-label">Events</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="../Videos/index.html"><span class="pill-label">Videos</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="../Background/index.html"><span class="pill-label">About</span></a></div>
+                    <div class="border"></div>
+                    <div class="li"><a href="../Contact/index.html"><span class="pill-label">Contact</span></a></div>
+                </div>
+                <div id="nav-collapsed" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </div>
-    </div>
 
 
         <!--making some space, might need to fix for dynamic windows? TODO-->
@@ -114,18 +134,18 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan porta lobortis.
                         Phasellus dignissim varius enim sed iaculis. Suspendisse vitae elementum nibh.
                         Quisque maximus elit tellus, quis tincidunt sapien vehicula sed.
-                    <small>
+                        <small>
                 </td>
             </tr>
         </table>
 
 
 
-    <div id="footer">
-        <hr />
-        Copyright - DBS 2018
+        <div id="footer">
+            <hr />
+            Copyright - DBS 2018
+        </div>
     </div>
-</div>
 
 
 </body>

@@ -10,6 +10,8 @@
     <title>DBS Website</title>
 
     <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="../script.js"></script>
+
 </head>
 
 <script>
@@ -36,26 +38,44 @@
 
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html">Home</a>
+        <a class="active" href="#">Lessons</a>
+        <a href="../Events/index.html">Events</a>
+        <a href="../Videos/index.html">Videos</a>
+        <a href="../Background/index.html">About</a>
+        <a href="../Contact/index.html">Contact</a>
+    </div>
+
     <div class="container" id="overall-container">
         <div class="container" id="header-div">
-            <div class="logo">
-                <span><img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo"></span>
-                <span class="title">Dive Beneath the Surface</span>
-            </div>
+            <a href="../index.html" class="nav-menu-left">
+                <div class="logo">
+                    <img width="80" height="80" src="../Images/logo.jpg" alt="DBS Logo">
+                    <div class="title">
+                        <div>
+                            Dive Beneath the Surface
+                        </div>
+                    </div>
+                </div>
+            </a>
             <div id="nav-menu-div">
                 <div class="my-nav my-nav-pills" id="nav-menu-ul">
                     <div class="border"></div>
-                    <div class="li"><a href="../Index.html">Home</a></div>
+                    <div class="li"><a href="../index.html">Home</a></div>
                     <div class="border"></div>
                     <div class="li active"><a href="#"><span class="pill-label">Lessons</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Events/Index.html"><span class="pill-label">Events</span></a></div>
+                    <div class="li"><a href="../Events/index.html"><span class="pill-label">Events</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Videos/Index.html"><span class="pill-label">Videos</span></a></div>
+                    <div class="li"><a href="../Videos/index.html"><span class="pill-label">Videos</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Background/Index.html"><span class="pill-label">About</span></a></div>
+                    <div class="li"><a href="../Background/index.html"><span class="pill-label">About</span></a></div>
                     <div class="border"></div>
-                    <div class="li"><a href="../Contact/Index.html"><span class="pill-label">Contact</span></a></div>
+                    <div class="li"><a href="../Contact/index.html"><span class="pill-label">Contact</span></a></div>
+                </div>
+                <div id="nav-collapsed" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
         </div>
@@ -129,8 +149,8 @@
                             <i class="fa fa-external-link" style="padding-left: 3px;"></i>
                         </div>
                         <div class="wide-card-content">
-                            Using underwater audio/video technology and YouTube Live, students engage in real-time (“live”) 
-                            communication with Cal Poly scientific SCUBA divers in the ocean. They pose questions to the divers 
+                            Using underwater audio/video technology and YouTube Live, students engage in real-time (“live”)
+                            communication with Cal Poly scientific SCUBA divers in the ocean. They pose questions to the divers
                             and connect their knowledge of structure and function to marine life along the California central coast.
                         </div>
                     </div>
@@ -149,8 +169,8 @@
                             <i class="fa fa-external-link" style="padding-left: 3px;"></i>
                         </div>
                         <div class="wide-card-content">
-                            Students apply their knowledge of structure and function to engineering by designing, drawing and then 
-                            comparing marine organisms with specific anatomical structures to support their survival, growth, behavior 
+                            Students apply their knowledge of structure and function to engineering by designing, drawing and then
+                            comparing marine organisms with specific anatomical structures to support their survival, growth, behavior
                             and reproduction.
                         </div>
                     </div>
@@ -225,8 +245,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>-->
+            </div>-->
+        </div>
 
         <div id="footer">
             <hr />
